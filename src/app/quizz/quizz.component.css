@@ -1,0 +1,133 @@
+/* Estilo do container de fundo */
+.quizz__background {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  background-image: url('/assets/images/background-heroes.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Estilo do container principal */
+.quizz__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  gap: 20px;
+  background: rgba(0, 0, 0, 0.5);
+  border-radius: 15px;
+}
+
+/* Estilo do logo/título */
+.quizz_logo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.quizz_logo h3 {
+  font-size: 36px;
+  color: #ffffff;
+  margin: 0;
+  text-align: center;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+/* Estilo das perguntas */
+.quizz_questions {
+  width: 100%;
+  background: linear-gradient(to bottom, #0f0326, #2a1a5e);
+  border-radius: 15px;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #ffffff;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+.quizz_questions h3 {
+  font-size: 24px;
+  margin: 0;
+  text-align: center;
+}
+
+/* Estilo das opções */
+.quizz_options {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 100%;
+}
+
+.btn-option {
+  padding: 20px;
+  background: linear-gradient(to right, #ff416c, #ff4b2b);
+  border: none;
+  border-radius: 8px; /* Corrigido de borderRadius para border-radius */
+  color: #ffffff;
+  font-size: 18px;
+  cursor: pointer;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  transition: transform 0.2s;
+}
+
+.btn-option:hover {
+  transform: scale(1.05);
+}
+
+/* Estilo do container dos resultados */
+.quizz_results {
+  width: 100%;
+  height: 400px;
+  background: linear-gradient(to bottom, #0f0326, #2a1a5e);
+  border-radius: 15px;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #ffffff;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+}
+
+/* Quando visível */
+.quizz_results.visible {
+  opacity: 1;
+}
+
+/* Container React */
+#reactContainer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 2000;
+  transition: background 0.5s ease-in-out;
+}
+
+/* Garante que o conteúdo do React seja visível */
+#reactContainer > div {
+  width: 100%;
+  height: 100%;
+  z-index: 2001;
+}

@@ -1,0 +1,47 @@
+{
+  "title": "Qual é o seu tipo de herói favorito?",
+  "questions": [
+    {
+      "question": "Você prefere um herói que tenha:",
+      "options": [
+        { "name": "Força bruta", "alias": "A" },
+        { "name": "Inteligência e estratégia", "alias": "B" },
+        { "name": "Velocidade e agilidade", "alias": "C" },
+        { "name": "Poderes místicos", "alias": "D" }
+      ]
+    },
+    {
+      "question": "Você gosta de heróis que sejam:",
+      "options": [
+        { "name": "Mais sérios e focados", "alias": "A" },
+        { "name": "Engraçados e descontraídos", "alias": "B" },
+        { "name": "Leais e altruístas", "alias": "C" },
+        { "name": "Misteriosos e imprevisíveis", "alias": "D" }
+      ]
+    },
+    {
+      "question": "Qual é o cenário ideal para o seu herói?",
+      "options": [
+        { "name": "Batalhas épicas contra vilões gigantes", "alias": "A" },
+        { "name": "Missões secretas e espionagem", "alias": "B" },
+        { "name": "Salvar o mundo de desastres naturais", "alias": "C" },
+        { "name": "Lutar contra forças sobrenaturais", "alias": "D" }
+      ]
+    },
+    {
+      "question": "Que tipo de parceiro você gostaria que seu herói tivesse?",
+      "options": [
+        { "name": "Um parceiro forte e valente", "alias": "A" },
+        { "name": "Um gênio da tecnologia", "alias": "B" },
+        { "name": "Um amigo leal e confiável", "alias": "C" },
+        { "name": "Um mentor sábio e místico", "alias": "D" }
+      ]
+    }
+  ],
+  "results": {
+    "A": "Você é como o Superman! Forte, corajoso e pronto para enfrentar qualquer desafio com força bruta!",
+    "B": "Você é como o Homem de Ferro! Inteligente, estrategista e sempre com um plano na manga!",
+    "C": "Você é como o Flash! Rápido, ágil e sempre pronto para salvar o dia com sua velocidade!",
+    "D": "Você é como o Doutor Estranho! Místico, misterioso e poderoso, enfrentando forças além da compreensão!"
+  }
+}
