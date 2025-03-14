@@ -89,4 +89,7 @@ Problema com Imagens de Fundo: Durante o desenvolvimento, enfrentamos dificuldad
 Porta em Uso: O servidor padrão (porta 4200) pode estar em uso. Use --port 4201 ou libere a porta manualmente para evitar conflitos.
 Depuração: Verifique o console do navegador (F12 > Console) para erros relacionados a imagens ou outros problemas.
 
+Agradeço sinceramente a oportunidade de compartilhar este projeto, que, embora simples, representa um marco significativo no meu aprendizado em desenvolvimento web. Reconheço que ainda tenho um longo caminho a percorrer e muito a aprender, mas estou comprometido em continuar me dedicando e aprimorando minhas habilidades. Este projeto foi desenvolvido com a base de referncia da Aula do Pro.felipe na Dio. (
+Criando um Clone do BuzzFeed com Angular ) Decola Tech 2025
+
 
