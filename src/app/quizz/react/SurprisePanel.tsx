@@ -13,34 +13,6 @@ const SurprisePanel: React.FC<SurprisePanelProps> = ({ result, onRestart }) => {
   console.log("SurprisePanel: Renderizando componente com resultado:", result);
   console.log("Dimensões do Confetti:", { width, height });
 
-  // Extrai o nome do personagem do resultado
-  const getCharacterFromResult = (result: string): string => {
-    if (result.includes("Superman")) return "superman";
-    if (result.includes("Homem de Ferro")) return "ironman";
-    if (result.includes("Flash")) return "flash";
-    if (result.includes("Doutor Estranho")) return "doctorstrange";
-    return "default"; // Caso de fallback
-  };
-
-  // Determina a imagem de fundo com base no personagem
-  const getBackgroundImage = (character: string): string => {
-    switch (character) {
-      case "superman":
-        return '/assets/images/superman-background.jpg';
-      case "ironman":
-        return '/assets/images/ironman-background.jpg';
-      case "flash":
-        return '/assets/images/flash-background.jpg';
-      case "doctorstrange":
-        return '/assets/images/doctorstrange-background.jpg';
-      default:
-        return '/assets/images/default-background.jpg'; // Caso de fallback (opcional)
-    }
-  };
-
-  const character = getCharacterFromResult(result);
-  const backgroundImage = getBackgroundImage(character);
-
   return (
     <div style={{
       position: 'fixed',
@@ -48,16 +20,13 @@ const SurprisePanel: React.FC<SurprisePanelProps> = ({ result, onRestart }) => {
       left: 0,
       width: '100%',
       height: '100%',
-      backgroundImage: `url(${backgroundImage})`,
-      backgroundSize: 'cover',
-      backgroundPosition: 'center',
+      background: 'linear-gradient(to bottom, #0f0326, #2a1a5e)', // Fundo gradiente
       display: 'flex',
       justifyContent: 'center',
       alignItems: 'center',
       zIndex: 2000,
       color: '#ffffff',
       overflow: 'hidden',
-      transition: 'background-image 0.5s ease-in-out',
     }}>
       <Confetti
         width={width}
@@ -116,5 +85,4 @@ const SurprisePanel: React.FC<SurprisePanelProps> = ({ result, onRestart }) => {
   );
 };
 
-// Exportação padrão corrigida
 export default SurprisePanel;
