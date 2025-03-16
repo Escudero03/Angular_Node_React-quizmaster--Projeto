@@ -1,5 +1,9 @@
 # Quiz App - Qual é o seu tipo de herói favorito?
 
+**Clique e Descubra ** - Seu  Heroi Surpreza. Acesse agora: <a href="https://dulcet-fudge-8224cf.netlify.app/" style="font-size:120%;" target="_blank">Quiz Heroi-Favorito !!</a>
+
+
+
 Bem-vindo ao **Quiz App**, um aplicativo interativo desenvolvido para determinar qual tipo de herói de quadrinhos combina mais com você com base nas suas respostas! Este projeto é uma aplicação web que utiliza Angular como framework principal, com integração de componentes React para a interface dinâmica. O quiz apresenta quatro personagens icônicos (Superman, Homem de Ferro, Flash e Doutor Estranho) como resultados possíveis, exibindo uma tela de conclusão personalizada com imagens de fundo.
 
 ## Descrição
